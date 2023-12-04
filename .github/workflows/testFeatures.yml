@@ -1,0 +1,34 @@
+name: Test Features
+
+on:
+  push:
+    branches: [ "feature" ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      # Pruebas para Backend de Agendamiento
+      - name: Backend Tests (Agendamiento)
+        working-directory: features/agendamiento/back
+        run: |
+          # Comandos para ejecutar pruebas unitarias en el backend (Golang)
+          go test -v ./...
+
+      # Pruebas para Frontend de Agendamiento
+      - name: Frontend Tests (Agendamiento)
+        working-directory: features/agendamiento/front
+        run: |
+          # Comandos para ejecutar pruebas unitarias en el frontend (React)
+          # Asegúrate de configurar las pruebas para los componentes JSX
+          npm install   # Instala las dependencias del proyecto (si es necesario)
+          npm test      # Ejecuta las pruebas unitarias
+      
