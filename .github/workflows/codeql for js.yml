@@ -58,7 +58,11 @@ jobs:
         # queries: security-extended,security-and-quality
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
-
+      #ENV_FILE_AG_BACK son las variables de entorno especificas de este repo
+    - name: Create .env file
+      run: |
+        echo "${{ secrets.ENV_FILE }}" > .env
+      working-directory: ${{ github.workspace }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
