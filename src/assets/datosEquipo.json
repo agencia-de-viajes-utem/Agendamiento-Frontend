@@ -21,14 +21,7 @@
       "github": "https://github.com/lukas-577"
     },
     {
-      "imagen": "src/assets/Equipo-img/DylanFernandez.jpeg",
-      "nombre": "Dylan Fernandez",
-      "grupo": "admin",
-      "rol": "Product Owner",
-      "github": "https://github.com/Dylannton"
-    },
-    {
-      "imagen": "",
+      "imagen": "src/assets/Equipo-img/NicolasNavarrete.jpeg",
       "nombre": "Nicolas Navarrete",
       "grupo": "desarrollador",
       "rol": "Frontend",
@@ -42,7 +35,7 @@
       "github": "https://github.com/Lilitha04"
     },
     {
-      "imagen": "",
+      "imagen": "src/assets/Equipo-img/MoisesLeiva.jpg",
       "nombre": "Moises Leiva",
       "grupo": "admin",
       "rol": "Technical Lead",
@@ -63,17 +56,108 @@
       "github": "https://github.com/BenjaSolorza"
     },
     {
-      "imagen": "",
+      "imagen": "src/assets/Equipo-img/NicolasMendez.jpeg",
       "nombre": "Nicolas Mendez",
-      "grupo": "admin",
-      "rol": "Infrastructure Lead",
+      "grupo": "desarrollador",
+      "rol": "Backend",
       "github": "https://github.com/ReKerFrost"
     },
     {
       "imagen": "",
-      "nombre": "Cristian Oyarce",
+      "nombre": "Bryan Flores",
+      "grupo": "seguridad",
+      "rol": "Security Lead",
+      "github": "https://github.com/Bry4nFl0r3s1"
+    },
+    {
+      "imagen": "",
+      "nombre": "Fabian Sanhueza",
       "grupo": "admin",
-      "rol": "Product Lead",
-      "github": "crisoyarce"
+      "rol": "Product Owner",
+      "github": "https://github.com/Gokarson"
+    },
+    {
+      "imagen": "",
+      "nombre": "Vladimir Besser",
+      "grupo": "desarrollador",
+      "rol": "Frontend",
+      "github": "https://github.com/Wysted"
+    },
+    {
+      "imagen": "",
+      "nombre": "Gabriel Gonzalez",
+      "grupo": "desarrollador",
+      "rol": "Frontend",
+      "github": "https://github.com/GabrielGlezG"
+    },
+    {
+      "imagen": "",
+      "nombre": "Enzo Troncoso",
+      "grupo": "desarrollador",
+      "rol": "Backend",
+      "github": "https://github.com/Enzogus"
+    },
+    {
+      "imagen": "",
+      "nombre": "Ernesto Medina",
+      "grupo": "desarrollador",
+      "rol": "Backend",
+      "github": "https://github.com/Ernestocmd"
+    },
+    {
+      "imagen": "",
+      "nombre": "Amaru Rios",
+      "grupo": "desarrollador",
+      "rol": "Frontend",
+      "github": "https://github.com/Am4rv"
+    },
+    {
+      "imagen": "",
+      "nombre": "Giovanni Vargas",
+      "grupo": "desarrollador",
+      "rol": "Backend",
+      "github": ""
+    },
+    {
+      "imagen": "",
+      "nombre": "Maria Ignacia Torres",
+      "grupo": "desarrollador",
+      "rol": "Backend",
+      "github": "https://github.com/nachaxD"
+    },
+    {
+      "imagen": "src/assets/Equipo-img/DylanFernandez.jpeg",
+      "nombre": "Dylan Fernandez",
+      "grupo": "admin",
+      "rol": "Product Owner",
+      "github": "https://github.com/Dylannton"
+    },
+    {
+      "imagen": "",
+      "nombre": "Sebastian Naranjo",
+      "grupo": "desarrollador",
+      "rol": "Backend",
+      "github": "https://github.com/Sebxn"
+    },
+    {
+      "imagen": "",
+      "nombre": "Ignacio Vega",
+      "grupo": "desarrollador",
+      "rol": "Frontend",
+      "github": "https://github.com/Ignaciovega1"
+    },
+    {
+      "imagen": "",
+      "nombre": "Luciano Sandoval",
+      "grupo": "desarrollador",
+      "rol": "Frontend",
+      "github": "https://github.com/u196000"
+    },
+    {
+      "imagen": "src/assets/Equipo-img/OscarOsorio.jpeg",
+      "nombre": "Oscar Osorio",
+      "grupo": "admin",
+      "rol": "Product Owner",
+      "github": "https://github.com/Oscvrs"
     }
   ]

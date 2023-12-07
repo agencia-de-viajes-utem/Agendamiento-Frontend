@@ -11,7 +11,7 @@ function Footer(){
             <nav className="footer-links">
                 <a href="/">Inicio</a>
                 <a href="/nosotros">Nosotros</a>
-                <a href="/contacto">Contacto</a>
+                <a href="/faq">FAQ</a>
             </nav>
             <div className="rights">
                 <p>© UTEM TRAVELS, Todos los derechos reservados</p>
