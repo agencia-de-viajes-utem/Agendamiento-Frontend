@@ -1,0 +1,73 @@
+/* customCalendar.css */
+
+/* Contenedor principal del calendario */
+.CalendarContainer {
+    position: relative;
+    /* Asegura que los elementos posicionados dentro de este sean relativos a este contenedor */
+}
+
+/* Estilos para el calendario */
+
+
+/* Estilos para el botón de cambiar vista */
+.CalendarToggleBtn {
+    position: relative;
+    background-color: #0298d0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 120px;
+}
+
+.react-calendar {
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.CalendarToggleBtn:hover {
+    background-color: #0277bd;
+}
+
+/* Estilos para el input de fecha */
+.CalendarInput {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0277bd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.CalendarPopupContainer {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    /* Centra el borde izquierdo del contenedor en el centro del contenedor padre */
+    transform: translateX(-50%);
+    /* Mueve el contenedor hacia la izquierda por la mitad de su ancho */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-end-end-radius: 1em;
+    border-end-start-radius: 1em;
+}

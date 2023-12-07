@@ -1,0 +1,223 @@
+/* Estilos generales de la tarjeta */
+.paqueteCard {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+/* Establece el ancho para las imágenes y el contenido */
+.paqueteCardImages,
+.paqueteContent {
+    width: 50%;
+}
+
+/* Estilos para el header y el cuerpo de la tarjeta */
+.paqueteCardHeader,
+.paqueteCardBody {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Imagen dentro de la tarjeta */
+.paqueteCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Botón de compra y su estado hover */
+.buyButton {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+}
+
+.buyButton button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.buyButton button:hover {
+        background-color: #023047;
+        color: white;
+        transition: color  0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 10px;
+    
+    
+}
+
+/* Estilos comunes para secciones de la tarjeta con servicios, valoración y precios */
+.paqueteCardServicios,
+.paqueteCardValoracion,
+.paqueteCardPrice,
+.paqueteCardPriceTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+    color: darkslategrey;
+}
+
+.paqueteCardServicios {
+    border-bottom: 1px solid #645e5e;
+    border-top: 1px solid #645e5e;
+    padding: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+/* Estilos específicos para valoración y precio */
+.paqueteCardValoracion {
+    margin-top: 50px;
+    border-top:1px solid #645e5e  ;
+    gap: 1rem;
+}
+
+.paqueteCardValoracion p,
+.paqueteCardPrice p,
+.paqueteCardPriceTotal p {
+    margin: 0;
+}
+
+/* Estilos para las estrellas */
+.star {
+    color: gray;
+}
+
+.star.filled {
+    color: #cccc21;
+}
+
+/* Estilos para el precio */
+.paqueteCardPrice {
+    font-size: 1em;
+    font-weight: 600;
+    color: #996921;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para el total por persona */
+.paqueteCardPriceTotal {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: end;
+}
+
+.paqueteCardPriceTotal .precioUnit,
+.paqueteCardPriceTotalPersona .TotalPersona {
+    font-weight: 600;
+}
+
+.paqueteCardPriceTotalPersona {
+    color: darkslategrey;
+    flex-direction: column;
+}
+
+/* Los tamaños de fuente se ajustan aquí si es necesario */
+.paqueteCardPriceTotal .precioUnit {
+    font-size: 2rem;
+}
+
+.paqueteCardPriceTotalPersona .TotalPersona,
+.paqueteCardValoracion p {
+    font-size: 1.2rem;
+}
+
+.paqueteCardPriceTotal .precioUnit {
+    font-size: 3rem;
+}
+
+.paqueteCardPriceTotalPersona .TotalPersona{
+    font-weight: 700;
+    font-size: 1em;
+}
+.paqueteCardPriceTotalPersona p{
+    font-size: 1em;
+
+}
+
+@media (max-width: 1482px) {
+    .paqueteCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .paqueteCardImages,.paqueteContent{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    .paqueteCardPriceTotal{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 725px) {
+    .paqueteCardPriceTotalPersona p{
+        font-size: .8em;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .paqueteCardPriceTotal .precioUnit{
+        font-size: 1.5em;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .buyButton{
+
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+
+/* .paqueteCardServicios span:hover{
+
+    background-color: #023047;
+    color: white;
+    transform: scale(1.2);
+    transition: color  0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 1000px;
+
+} */
+
+.paqueteCardServicios {
+    display: flex;
+    justify-content: space-around; /* Ajusta según tus necesidades de diseño */
+}
+
+.paqueteCardServicios span {
+    font-size: 24px; /* Tamaño inicial de los iconos, ajusta según tus necesidades */
+}
+
+/* Media query para ajustar el tamaño de los iconos en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .paqueteCardServicios span {
+        font-size: 20px;
+    }
+}

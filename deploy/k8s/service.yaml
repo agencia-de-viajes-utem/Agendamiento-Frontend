@@ -1,0 +1,13 @@
+#golang-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: agendamiento-front
+spec:
+  selector:
+    app: agendamiento-front
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9090
+  type: ClusterIP

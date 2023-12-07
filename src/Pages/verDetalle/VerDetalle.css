@@ -1,0 +1,23 @@
+/* Estilos para reducir el tamaño de la galería */
+.header h1 {
+    text-align: center;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+  }
+
+
+  /* Ajustes para la galería */
+.galeria-container {
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 100%; /* Evita que la galería sea más ancha que el ancho de la ventana */
+}
+
+/* Ajustes adicionales para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .verDetalleContainer {
+        flex-direction: column;
+    }
+
+    .galeria-container {
+        margin-bottom: 20px; /* Añade espacio entre la galería y la tarjeta de compra en pantallas pequeñas */
+    }
+}

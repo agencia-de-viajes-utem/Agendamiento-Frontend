@@ -1,0 +1,45 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.contenedor-filtros{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 0 1em 1rem;
+}
+
+
+.servicios{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    width: 100%;
+    gap: .5em;
+}
+
+.input{
+    width: 20em;
+    margin-bottom: 1em;
+}
+
+.label{
+    font-weight: 600;
+    font-size: larger;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 1em;
+  }
+

@@ -1,0 +1,64 @@
+/* tarjetaDescripcion.css */
+
+.tarjeta-resumen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: whitesmoke;
+}
+
+.seccion {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.seccion p {
+  margin-bottom: 8px;
+  font-size: 1.2rem; /* Tamaño de fuente ajustado */
+  color: #333; /* Color de texto ajustado */
+}
+
+.transicion {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.transicion img {
+  width: 100px;
+}
+
+.seccion h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem; /* Tamaño de fuente ajustado */
+  color: #333; /* Color de texto ajustado */
+}
+
+.seccion svg {
+  font-size: 2rem;
+  color: #FB8500;
+  margin-left: 10px;
+}
+
+/* Ajusta el padding para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .tarjeta-resumen {
+    flex-direction: column;
+  }
+
+  .seccion {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .transicion {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.lista-paquetes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Esto añade un espacio entre cada PaqueteCard */
+    margin-top: 1rem;
+}
+
+.paqueteCard {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+}

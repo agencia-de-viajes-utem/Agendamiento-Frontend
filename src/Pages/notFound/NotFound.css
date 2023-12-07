@@ -1,0 +1,64 @@
+/* NotFound.css */
+.no-scroll {
+    overflow: hidden;
+}
+
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.not-found-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    max-width: 600px;
+    /* Ajusta el ancho máximo según tu diseño */
+    height: 80%;
+    /* Ajusta la altura según tu diseño */
+    border-radius: 1em;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.not-found-message p {
+    color: red;
+    font-size: 1rem;
+}
+
+.not-found-container .imagen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .not-found-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .not-found-message {
+        height: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+}

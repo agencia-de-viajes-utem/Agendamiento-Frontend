@@ -1,0 +1,126 @@
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    background: rgb(33,158,188);
+    background: linear-gradient(180deg, rgba(33,158,188,1) 35%, rgba(142,202,230,1) 100%);
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.333);
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.container{
+    z-index: 4;
+}
+
+.Contenedor h1 {
+    color: darkslategrey;
+    font-weight: 600;
+}
+
+.ContenedorBuscador {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Espaciado entre elementos */
+    justify-content: center;
+    align-items: center;
+}
+
+.ContenedorOrigen,
+.ContenedorDestino,
+.ContenedorFecha,
+.ContenedorPasajeros {
+    flex: 1;
+    /* Mínimo ancho para que no se hagan demasiado pequeños */
+}
+
+.LabelOrigen,
+.LabelDestino,
+.LabelFecha,
+.LabelPasajeros {
+    display: block;
+    margin-bottom: 5px;
+    color: #023047;
+    /* Color del texto para las etiquetas, elige uno que combine con tu diseño */
+    font-weight: bold;
+}
+
+.ContenedorOrigen input,
+.ContenedorDestino input,
+.ContenedorFecha input,
+.InputPasajeros {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #023047;
+    /* Borde sólido con el color de la etiqueta */
+    border-radius: 4px;
+    /* Bordes redondeados para los inputs */
+    font-size: 16px;
+    height: auto;
+}
+
+#origen a,
+#destino a {
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+#origen a:hover,
+#destino a:hover {
+    background-color: #0277bd;
+    color: white;
+}
+
+#origen -webkit::-webkit-scrollbar,
+#destino -webkit::-webkit-scrollbar {
+    width: 0.5em !important;
+}
+
+.BotonBuscar {
+    padding: 10px 20px;
+    background-color: #FB8500;
+    /* Fondo azul */
+    color: white;
+    /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    /* Bordes redondeados para el botón */
+    cursor: pointer;
+    /* Cursor tipo pointer para indicar que es clickeable */
+    font-size: 18px;
+    font-weight: bold;
+    transition: .2s ease;
+}
+
+.ContenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.ContenedorBoton button{
+    border: none;
+}
+
+.BotonBuscar:hover {
+    background-color: #E16000;
+    /* Color un poco más oscuro al pasar el ratón por encima */
+}
+
+/* Estilos para adaptar el formulario en pantallas pequeñas */

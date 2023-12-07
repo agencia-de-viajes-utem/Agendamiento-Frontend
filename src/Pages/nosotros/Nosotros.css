@@ -1,0 +1,52 @@
+.contenedor-pagina{
+    min-height: 100vh;
+    margin: auto;
+    padding: 1em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .contenedor-pagina{
+        padding: 1em 6em;
+    }
+}
+@media (max-width: 775px) {
+    .contenedor-pagina{
+        padding: 1em 2em;
+    }
+}
+
+/*Quienes somos (Texto)*/
+.quienes-somos{
+    text-align: center;
+    line-height: 2em;
+    padding: 1em;
+}
+
+.quienes-somos h1{
+    color: black;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.quienes-somos p{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/*Logo*/
+
+.logo-utem-travels{
+    margin-top: 1em;
+    width: 10%;
+    min-width: 10em;
+    height: auto;
+}
+
+/*Tarjetas*/
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
