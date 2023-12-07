@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { Collapse, Modal, Button } from 'react-bootstrap';
 import { MesString } from '../../Components/utils';
 
+
 import BuscaViaje from '../../Components/buscaViaje';
 import ListaPaquetes from '../../Components/listaPaquetes/index';
 import BotonOrdener from '../../Components/botonOrdenar/';

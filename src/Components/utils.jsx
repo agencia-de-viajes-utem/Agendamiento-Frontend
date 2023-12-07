@@ -8,6 +8,7 @@ import { RiTempColdLine } from "react-icons/ri";
 import { TbBathFilled } from "react-icons/tb";
 import { GrRestaurant } from "react-icons/gr";
 
+
 //import { FaPeopleGroup } from 'react-icons/fa'; este icono genera error
 
 
@@ -36,7 +37,14 @@ export const serviceIcons = {
 
 };
 
+export const aerolinea = (nombre) => {
+  const aerolineas = {
+    'JetSmart': './Caja-Logo-JS-Color.png',
+    
+  };
 
+  return aerolineas[nombre] || ''; 
+};
 
 export const renderStars = (valoracion) => {
   const totalStars = 5;

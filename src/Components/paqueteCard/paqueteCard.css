@@ -114,6 +114,15 @@
     margin-bottom: 0.5em;
 }
 
+.paqueteCardPrice span {
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(148, 120, 43);
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 /* Estilos para el total por persona */
 .paqueteCardPriceTotal {
     flex-direction: row;
@@ -180,18 +189,48 @@
     }
 
     .paqueteCardPriceTotal .precioUnit{
+
         font-size: 1.5em;
         display: inline-block;
         vertical-align: bottom;
     }
-    .buyButton{
 
-        position: relative;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+    .paqueteCardPriceTotal {
+        
+        font-size: 1.5em;
+        flex-direction: column;
+        vertical-align: bottom;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
+
+    .buyButton {
+        width: 100%;
+        display: flex;
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    }
+
+    .buyButton button {
+        width: 100%;
+    }
+
+    .fechaContainer{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    
+    }
+
+    .fechaContainer span{
+
+        width: 100%;
+    
+    }
+
 }
 
 

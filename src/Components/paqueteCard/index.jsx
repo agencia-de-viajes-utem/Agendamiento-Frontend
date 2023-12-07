@@ -3,8 +3,9 @@ import './paqueteCard.css';  // Asegúrate de tener el archivo CSS correspondien
 import Slider from 'react-slick'; // Importa el Slider de react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { renderStars, renderServiceIcons, formatFechaA, agregarPuntos  } from '../utils.jsx';
+import { renderStars, renderServiceIcons, formatFechaA, agregarPuntos, aerolinea  } from '../utils.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 
 
 const PaqueteCard = ({ paquete, handleBuy }) => {
@@ -15,6 +16,8 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
     // Convierte las fechas a objetos Date
     const fechaInicio = new Date(fechainit);
     const fechaFin = new Date(fechafin);
+
+    const aerolineaSeleccionada = 'JetSmart';
     
 
     // Calcula la diferencia en milisegundos
@@ -57,15 +60,15 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
 
                 </Slider>
             </div>
-            <div className="paqueteContent">
-                <div className="paqueteCardHeader">
-                    <h2>{nombre}</h2>
-                    <div className="w-100">
+            <div className="paqueteContent ">
+                <div className="paqueteCardHeader mx-auto d-flex flex-column ">
+                    <h2 className='text-center'>{nombre}</h2>
+                    <div className="fechaContainer mx-auto gap-4 d-flex">
 
-                         <span className='bg-secondary text-white fw-bold rounded p-2 ida me-5'>Ida {formatFechaA(fechainit)}
+                         <span className='bg-secondary text-white fw-bold rounded p-2 ida px-4 text-center'>Ida {formatFechaA(fechainit)}
                          </span>
 
-                         <span className='bg-primary text-white fw-bold rounded p-2 me-5'>Vuelta {formatFechaA(fechafin)}</span>
+                         <span className='bg-primary text-white fw-bold rounded p-2 px-4 text-center '>Vuelta {formatFechaA(fechafin)}</span>
 
                      </div>
                     
@@ -82,13 +85,13 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                         {renderServiceIcons(info_paquete.servicios_habitacion)}
                     </div>
                     <div className="paqueteCardPrice">
-                        <p>{`Vuelo $${precio_vuelo}`} {}</p>
-                        <p>{`Noche $${precio_noche}`}</p>
+                        <p> Vuelo <span className='fw-bold'>{`$${precio_vuelo}`}</span> </p>
+                        <p> Noche <span>{`$${precio_noche}`}</span></p>
                     </div>
                     <div className="paqueteCardPriceTotal">
                         <div className="aerolinea fs-5">
-                           <div className="row"> <p>Viajando con </p> </div>
-                            <div className="row">  </div>
+                           <div className="row"> <p>Viajando con </p>  </div>
+                            <div className="row"> <img style={{width:"200px"}} className='img-fluid' src={aerolinea(aerolineaSeleccionada)} alt={aerolineaSeleccionada} /> </div>
                         </div>
                         <div className="paqueteCardPriceTotalPersona ">
                             <p className=' w-100 rounded fw-bold p-2 mt-1'>{`Final ${total_personas} personas`}</p>
@@ -96,10 +99,10 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                                 <p> {`$${agregarPuntos(precio_vuelo * total_personas + precio_noche * diferenciaEnDias)}`} </p>
                             </div>
                         </div>
-                        <div className="buyButton">
-                            <div className=' '>
+                        <div className=" buyButton">
+                            
                             <button onClick={() => handleBuy(paquete)}>Comprar</button>
-                            </div>
+                            
                         </div>
                     </div>
 
