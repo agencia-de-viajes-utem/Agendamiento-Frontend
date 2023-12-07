@@ -84,9 +84,9 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                         {renderServiceIcons(info_paquete.hotel_info.servicios_hotel)}
                         {renderServiceIcons(info_paquete.servicios_habitacion)}
                     </div>
-                    <div className="paqueteCardPrice">
-                        <p> Vuelo <span className='fw-bold'>{`$${precio_vuelo}`}</span> </p>
-                        <p> Noche <span>{`$${precio_noche}`}</span></p>
+                    <div className="paqueteCardPrice text-center">
+                        <p className='row text-center d-flex'>  <span style={{fontSize:"1.2rem"}} className='Vuelo'>Vuelo</span> <span className='fw-bold'>{`$${precio_vuelo}`}</span> </p>
+                        <p className='row text-center d-flex'> <span style={{fontSize:"1.2rem"}} className='vuelo'>Noche</span>  <span>{`$${precio_noche}`}</span></p>
                     </div>
                     <div className="paqueteCardPriceTotal">
                         <div className="aerolinea fs-5">
