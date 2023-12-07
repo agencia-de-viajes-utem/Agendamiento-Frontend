@@ -3,6 +3,7 @@ import "./tarjetaDescripcion.css"
 import { useLocation } from "react-router-dom";
 import { BsFillBuildingFill } from 'react-icons/bs';
 import {  FaPlaneDeparture } from 'react-icons/fa';
+import { formatFechaA } from "../../../Components/utils.jsx";
 
 const tarjetaDescripcion = () => {
   const location = useLocation();
@@ -65,8 +66,8 @@ const tarjetaDescripcion = () => {
         <h1>Vuelo <FaPlaneDeparture/></h1>
         <p><span className='fw-bold'>Origen: </span>{` ${nombre_ciudad_origen}`}</p>
         <p><span className='fw-bold'>Destino: </span>{` ${nombre_ciudad_destino}`}</p>
-        <p><span className='fw-bold'>Fecha de ida: </span>{` ${fechainit}`}</p>
-        <p><span className='fw-bold'>Fecha de vuelta: </span>{` ${fechafin}`}</p>
+        <p><span className='fw-bold'>Fecha de ida: </span>{` ${formatFechaA(fechainit)}`}</p>
+        <p><span className='fw-bold'>Fecha de vuelta: </span>{` ${formatFechaA(fechafin)}`}</p>
         <p><span className='fw-bold'>Cantidad de personas: </span>{` ${total_personas} personas`}</p>
       </div>
     </div>

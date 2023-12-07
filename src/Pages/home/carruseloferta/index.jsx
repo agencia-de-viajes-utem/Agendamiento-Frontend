@@ -9,8 +9,8 @@ import { renderStars, formatFecha, agregarPuntos } from '../../../Components/uti
 function OfferCard({ paquete, cardsToShow, VITE_PATH_IMAGES, handleBuy}) {
   
 
-  const fechaInicio = new Date(paquete.fecha_init);
-  const fechaFin = new Date(paquete.fecha_fin);
+  const fechaInicio = new Date(paquete.fechainit);
+  const fechaFin = new Date(paquete.fechafin);
   
 
   // Calcula la diferencia en milisegundos
@@ -43,8 +43,8 @@ function OfferCard({ paquete, cardsToShow, VITE_PATH_IMAGES, handleBuy}) {
           </div>
           <div className="d-flex justify-content-between">
           <div className="fecha"> <div className="d-flex justify-content-between ">
-              <div className="bg-secondary text-white fw-bold rounded p-2 ida me-2">{formatFecha(paquete.fecha_init)} </div>
-              <div className="bg-primary text-white fw-bold rounded p-2"> {formatFecha(paquete.fecha_fin)}</div>  
+              <div className="bg-secondary text-white fw-bold rounded p-2 ida me-2">{formatFecha(paquete.fechainit)} </div>
+              <div className="bg-primary text-white fw-bold rounded p-2"> {formatFecha(paquete.fechafin)}</div>  
             </div>
             <div className="bg-secondary-subtle w-100 rounded fw-bold p-2 mt-1" style={{color :"black"}}> Para {paquete.total_personas} Personas</div>
             </div>

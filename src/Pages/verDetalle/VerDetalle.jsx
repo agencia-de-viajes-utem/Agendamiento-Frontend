@@ -13,6 +13,7 @@ import TarjetaCompra from "./tarjetaComprar/index.jsx";
 import Comentario from "./comentario/Index.jsx";
 
 
+
 // Esta línea es necesaria para la accesibilidad del modal
 Modal.setAppElement("#root");
 
@@ -67,7 +68,7 @@ const VerDetalle = () => {
       <div className="header">
         <Header />
         <div className="detalle mt-3 mx-auto" style={{width:"90%"}} >
-        <h1 className="col-xxl-2 mt-2 mb-2" style={{width:"90%"}}>{nombre_hotel}</h1>
+        <h1 className="col-xxl-2 mt-2 mb-2" style={{width:"90%"}}>{paquete.nombre}</h1>
         <div className="d-flex justify-content-center mt-2 mx-auto verDetalleContainer w-100">
           <div className="galeria-container" >
             <ImageGallery items={imageGalleryItems} />

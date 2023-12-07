@@ -21,6 +21,7 @@ const TarjetaCompra = () => {
     detalles,
     precio_vuelo,
     precio_noche,
+    precio_oferta_vuelo,
     imagenes,
     info_paquete: {
       nombre_opcion_hotel,
@@ -49,13 +50,14 @@ const diferenciaEnDias = diferenciaEnMilisegundos / (1000 * 60 * 60 * 24);
 
   return (
     <div className="tarjeta-compra w-100 me-5 h-100 ">
-      <h1>{nombre}</h1>
+      <h1>{nombre_hotel}</h1>
       <p>{descripcion_hotel}</p>
       <p1>{<div className="starsContainer" style={{fontSize:'2rem', marginTop:"-20px"}}>{renderStars(valoracion_hotel)}</div>}</p1>
       <p>{descripcion_habitacion}</p>
       <p>{<div className="servicesContainer "style={{fontSize:'1.5rem'}}>{renderServiceIcons(servicios_habitacion)}<p></p> </div>}</p>
       <h4 className="fw-bold">{`Final ${total_personas} personas`}</h4>
-      <h4 className="fw-bold"> {`$${agregarPuntos(precio_vuelo * total_personas + precio_noche * diferenciaEnDias)}`}</h4>
+      {precio_oferta_vuelo > 0 ?  ( <h4 className="fw-bold"> {`$${agregarPuntos(precio_oferta_vuelo * total_personas + precio_noche * diferenciaEnDias)}`}</h4>):(
+      <h4 className="fw-bold"> {`$${agregarPuntos(precio_vuelo * total_personas + precio_noche * diferenciaEnDias)}`}</h4>)}
         <button className="comprar-button">Comprar</button>
       </div>
   );
