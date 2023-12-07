@@ -10,14 +10,14 @@
       "imagen": "src/assets/Equipo-img/Jose_de_la_Fuente.jpg",
       "nombre": "Jose de la Fuente",
       "grupo": "seguridad",
-      "rol": "Lider de Seguridad",
+      "rol": "Security Lead",
       "github": "https://github.com/zkillerzjt"
     },
     {
       "imagen": "src/assets/Equipo-img/LukasMedina.jpeg",
       "nombre": "Lukas Medina",
       "grupo": "admin",
-      "rol": "Arquitecto",
+      "rol": "Architect Lead",
       "github": "https://github.com/lukas-577"
     },
     {
@@ -33,5 +33,47 @@
       "grupo": "desarrollador",
       "rol": "Frontend",
       "github": "https://github.com/nnavrrete"
+    },
+    {
+      "imagen": "",
+      "nombre": "Lilibeth Parada",
+      "grupo": "admin",
+      "rol": "Scrum Master",
+      "github": "https://github.com/Lilitha04"
+    },
+    {
+      "imagen": "",
+      "nombre": "Moises Leiva",
+      "grupo": "admin",
+      "rol": "Technical Lead",
+      "github": "https://github.com/moisesnks"
+    },
+    {
+      "imagen": "",
+      "nombre": "Cristian Oyarce",
+      "grupo": "admin",
+      "rol": "Product Lead",
+      "github": "https://github.com/crisoyarce"
+    },
+    {
+      "imagen": "",
+      "nombre": "Benjamin Solorza",
+      "grupo": "admin",
+      "rol": "DevOps",
+      "github": "https://github.com/BenjaSolorza"
+    },
+    {
+      "imagen": "",
+      "nombre": "Nicolas Mendez",
+      "grupo": "admin",
+      "rol": "Infrastructure Lead",
+      "github": "https://github.com/ReKerFrost"
+    },
+    {
+      "imagen": "",
+      "nombre": "Cristian Oyarce",
+      "grupo": "admin",
+      "rol": "Product Lead",
+      "github": "crisoyarce"
     }
   ]
