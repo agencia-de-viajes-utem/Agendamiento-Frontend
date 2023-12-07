@@ -22,6 +22,9 @@ const Home = () => {
     const [error, setError] = useState(null);
     const navigate = useNavigate(); // Obtén la función de navegación
 
+
+    
+
     useEffect(() => {
         const fetchAeropuertos = async () => {
             try {
@@ -139,6 +142,7 @@ const Home = () => {
     return (
         <div className="Home">
             <Header />
+         
             <div className="Contenedor">
                 <div id="background-wrap">
                     <div className="x1">

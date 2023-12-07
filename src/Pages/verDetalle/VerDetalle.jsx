@@ -13,6 +13,7 @@ import TarjetaCompra from "./tarjetaComprar/index.jsx";
 import Comentario from "./comentario/Index.jsx";
 
 
+
 // Esta línea es necesaria para la accesibilidad del modal
 Modal.setAppElement("#root");
 

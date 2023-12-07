@@ -62,10 +62,10 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                     <h2>{nombre}</h2>
                     <div className="w-100">
                         <p>
-                         <span className='bg-secondary text-white fw-bold rounded p-2 ida me-2'>Ida: {formatFechaA(fechainit)}
+                         <span className='bg-secondary text-white fw-bold rounded p-2 ida me-2'>Ida {formatFechaA(fechainit)}
                          </span>
                             
-                         <span className='bg-primary text-white fw-bold rounded p-2'>Vuelta: {formatFechaA(fechafin)}</span>
+                         <span className='bg-primary text-white fw-bold rounded p-2'>Vuelta {formatFechaA(fechafin)}</span>
                        
 
                      </p>
