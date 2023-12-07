@@ -154,9 +154,9 @@ const VerPaquetes = () => {
     pasajeros: `Pasajeros: ${respuesta.personas}`
   };
 
-
-
-
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -217,9 +217,9 @@ const VerPaquetes = () => {
         )}
       </div>
       <Footer />
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
+      <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Body>
-          <Filtros filtrarPaquetes={filtrarPaquetes} largopaquete={paquetesFiltrados.length} />
+          <Filtros filtrarPaquetes={filtrarPaquetes} largopaquete={paquetesFiltrados.length} onFilterClick={handleCloseModal} />
         </Modal.Body>
       </Modal>
     </>

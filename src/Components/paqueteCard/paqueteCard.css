@@ -221,3 +221,19 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 767px){
+    .paqueteCardHeader .w-100{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .paqueteCardValoracion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

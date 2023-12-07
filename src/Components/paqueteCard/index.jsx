@@ -61,14 +61,12 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                 <div className="paqueteCardHeader">
                     <h2>{nombre}</h2>
                     <div className="w-100">
-                        <p>
-                         <span className='bg-secondary text-white fw-bold rounded p-2 ida me-2'>Ida {formatFechaA(fechainit)}
-                         </span>
-                            
-                         <span className='bg-primary text-white fw-bold rounded p-2'>Vuelta {formatFechaA(fechafin)}</span>
-                       
 
-                     </p>
+                         <span className='bg-secondary text-white fw-bold rounded p-2 ida me-5'>Ida {formatFechaA(fechainit)}
+                         </span>
+
+                         <span className='bg-primary text-white fw-bold rounded p-2 me-5'>Vuelta {formatFechaA(fechafin)}</span>
+
                      </div>
                     
                     <div className="paqueteCardValoracion" style={{ borderTop: "" }}>

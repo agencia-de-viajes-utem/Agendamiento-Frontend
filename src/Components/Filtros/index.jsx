@@ -6,7 +6,7 @@ import './Filtros.css';
 
 import Estrellas from '../Estrellas';
 
-const Filtros = ({ filtrarPaquetes, largopaquete }) => {
+const Filtros = ({ filtrarPaquetes, largopaquete , onFilterClick}) => {
     const storedStars = localStorage.getItem('stars') || '';
     const storedServiceTypes = JSON.parse(localStorage.getItem('serviceTypes')) || [];
 
@@ -48,10 +48,13 @@ const Filtros = ({ filtrarPaquetes, largopaquete }) => {
     const handleStarClick = (valoracion) => {
         setStars(stars === valoracion.toString() ? '' : valoracion.toString());
     };
-
+    
     const handleFilterClick = () => {
         filtrarPaquetes(stars, serviceTypes);
-    };
+        if (onFilterClick) {
+          onFilterClick(); // Llamada a la función proporcionada desde VerPaquetes
+        }
+      };
 
     return (
         <Form className="contenedor-filtros">
@@ -87,6 +90,7 @@ const Filtros = ({ filtrarPaquetes, largopaquete }) => {
            <div className="paquetesRestantes mb-4"><span>Paquetes Restantes: {largopaquete}</span></div>
             <div className="botones">
                 <Button onClick={handleFilterClick}>
+                    
                     <i className="bi bi-funnel-fill"></i>
                     Filtrar
                 </Button>
