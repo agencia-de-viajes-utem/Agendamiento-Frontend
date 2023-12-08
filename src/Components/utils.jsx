@@ -8,6 +8,7 @@ import { RiTempColdLine } from "react-icons/ri";
 import { TbBathFilled } from "react-icons/tb";
 import { GrRestaurant } from "react-icons/gr";
 
+
 //import { FaPeopleGroup } from 'react-icons/fa'; este icono genera error
 
 
@@ -36,21 +37,29 @@ export const serviceIcons = {
 
 };
 
+export const aerolinea = (nombre) => {
+  const aerolineas = {
+    'JetSmart': './Caja-Logo-JS-Color.png',
+    
+  };
 
+  return aerolineas[nombre] || ''; 
+};
 
 export const renderStars = (valoracion) => {
-    const totalStars = 5;
-    let stars = [];
+  const totalStars = 5;
+  let stars = [];
 
-    for (let i = 0; i < valoracion; i++) {
-        stars.push(<span style={{color:"#F4BA40"}} key={`star_${i}`} className="star filled">★</span>);
-    }
+  for (let i = 0; i < valoracion; i++) {
+      stars.push(<span style={{color:"#F4BA40"}} key={`star_${i}`} className="star filled">★</span>);
+  }
+  
+  for (let i = valoracion; i < totalStars-0.4; i++) {
+        
+      stars.push(<span key={`star_${i}`} className="star">☆</span>);
+  }
 
-    for (let i = valoracion; i < totalStars; i++) {
-        stars.push(<span key={`star_${i}`} className="star">☆</span>);
-    }
-
-    return stars;
+  return stars;
 };
 
 export const renderServiceIcons = (services) => {
