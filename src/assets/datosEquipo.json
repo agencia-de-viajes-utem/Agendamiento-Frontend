@@ -49,7 +49,7 @@
       "github": "https://github.com/crisoyarce"
     },
     {
-      "imagen": "",
+      "imagen": "src/assets/Equipo-img/BenjaminSolorza.jpeg",
       "nombre": "Benjamin Solorza",
       "grupo": "admin",
       "rol": "DevOps",
@@ -70,7 +70,7 @@
       "github": "https://github.com/Bry4nFl0r3s1"
     },
     {
-      "imagen": "",
+      "imagen": "src/assets/Equipo-img/FabianSanhueza.jpeg",
       "nombre": "Fabian Sanhueza",
       "grupo": "admin",
       "rol": "Product Owner",
@@ -105,7 +105,7 @@
       "github": "https://github.com/Ernestocmd"
     },
     {
-      "imagen": "",
+      "imagen": "src/assets/Equipo-img/AmaruRios.jpeg",
       "nombre": "Amaru Rios",
       "grupo": "desarrollador",
       "rol": "Frontend",
@@ -116,7 +116,7 @@
       "nombre": "Giovanni Vargas",
       "grupo": "desarrollador",
       "rol": "Backend",
-      "github": ""
+      "github": "https://github.com/GiovannyxDDD"
     },
     {
       "imagen": "",
