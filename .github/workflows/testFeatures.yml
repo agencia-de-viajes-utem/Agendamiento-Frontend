@@ -15,20 +15,21 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-
+# AQUI se deshabilitaron de momento xq no existen pruebas unitarias
+#se reactivarán cuando existan pruebas unitarias y una carpeta donde se guarden.
       # Pruebas para Backend de Agendamiento
-      - name: Backend Tests (Agendamiento)
-        working-directory: features/agendamiento/back
-        run: |
+      #- name: Backend Tests (Agendamiento)
+       # working-directory: features/agendamiento/back
+        #run: |
           # Comandos para ejecutar pruebas unitarias en el backend (Golang)
-          go test -v ./...
+         # go test -v ./...
 
       # Pruebas para Frontend de Agendamiento
-      - name: Frontend Tests (Agendamiento)
-        working-directory: features/agendamiento/front
-        run: |
+     # - name: Frontend Tests (Agendamiento)
+      #  working-directory: features/agendamiento/front
+       # run: |
           # Comandos para ejecutar pruebas unitarias en el frontend (React)
           # Asegúrate de configurar las pruebas para los componentes JSX
-          npm install   # Instala las dependencias del proyecto (si es necesario)
-          npm test      # Ejecuta las pruebas unitarias
+        #  npm install   # Instala las dependencias del proyecto (si es necesario)
+         # npm test      # Ejecuta las pruebas unitarias
       
