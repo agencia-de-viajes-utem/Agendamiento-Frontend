@@ -1,8 +1,8 @@
 name: Test Features
 
-on:
-  push:
-    branches: [ "feature" ]
+#on:
+  #push:
+    #branches: [ "feature" ]
 jobs:
   test:
     runs-on: ubuntu-latest
