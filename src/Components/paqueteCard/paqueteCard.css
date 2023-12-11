@@ -1,13 +1,14 @@
 /* Estilos generales de la tarjeta */
 .paqueteCard {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
     overflow: hidden;
     margin: 20px;
     font-family: 'Arial', sans-serif;
     display: flex;
     width: 80%;
     height: 100%;
+    position: relative;
+    
 }
 
 /* Establece el ancho para las imágenes y el contenido */
@@ -15,6 +16,14 @@
 .paqueteContent {
     width: 50%;
 }
+.paqueteCardImages img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 
 /* Estilos para el header y el cuerpo de la tarjeta */
 .paqueteCardHeader,
@@ -276,3 +285,26 @@
         text-align: center;
     }
 }
+
+.ValoracionUsuarios {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color :#023047; /* Opcional: fondo blanco semitransparente */
+    padding: 5px; /* Opcional: agregar espacio alrededor del contenido */
+   border-radius: 0 0 0 5px;
+    width: 50px;
+    height: 50px;
+    color: #eaeaea;
+  }
+.ValoracionUsuarios p {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin:  0 auto;
+}
+
+    
+  

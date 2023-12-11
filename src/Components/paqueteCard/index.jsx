@@ -41,13 +41,16 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: false ,
+        autoplay: true, // Configuración para el autoplay
+    autoplaySpeed: 1800,
     };
 
 
     return (
-        <div className="paqueteCard">
+        <div className="paqueteCard ">
             
+            <div className='ValoracionUsuarios d-flex'> <p className='fw-bold'>4.7</p></div>
             
             <div className="paqueteCardImages">
                 <Slider key={`slider-${paquete.id}`} {...sliderSettings}>
@@ -56,6 +59,8 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                             <img src={url} alt={`Imagen ${index + 1}`} />
                             
                         </div>
+                       
+                       
                     ))}
 
                 </Slider>
@@ -85,8 +90,7 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                         {renderServiceIcons(info_paquete.servicios_habitacion)}
                     </div>
                     <div className="paqueteCardPrice text-center">
-                        <p className='row text-center d-flex'>  <span style={{fontSize:"1.2rem"}} className='Vuelo'>Vuelo</span> <span className='fw-bold'>{`$${precio_vuelo}`}</span> </p>
-                        <p className='row text-center d-flex'> <span style={{fontSize:"1.2rem"}} className='vuelo'>Noche</span>  <span>{`$${precio_noche}`}</span></p>
+                       
                     </div>
                     <div className="paqueteCardPriceTotal">
                         <div className="aerolinea fs-5">
@@ -96,12 +100,13 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                         <div className="paqueteCardPriceTotalPersona ">
                             <p className=' w-100 rounded fw-bold p-2 mt-1'>{`Final ${total_personas} personas`}</p>
                             <div className="TotalPersona fw-bold">
-                                <p> {`$${agregarPuntos(precio_vuelo * total_personas + precio_noche * diferenciaEnDias)}`} </p>
+                                <h2 className=' me-5 fw-bold black'> {`CLP$${agregarPuntos(precio_vuelo * total_personas + precio_noche * diferenciaEnDias)}`} </h2>
+                                
                             </div>
                         </div>
                         <div className=" buyButton">
                             
-                            <button onClick={() => handleBuy(paquete)}>Comprar</button>
+                            <button className='btn-lg' onClick={() => handleBuy(paquete)}>Comprar</button>
                             
                         </div>
                     </div>

@@ -33,7 +33,9 @@ function OfferCard({ paquete, cardsToShow, VITE_PATH_IMAGES, handleBuy}) {
     <div className={`col-md-${8 / cardsToShow} col-xl-${9 / cardsToShow}  mt-2 mb-2 me-5 ms-5 `}>
       <div className="card mb-2 " style={{ height: '100%', width:"350px" }}>
         <img src={imageUrl} alt={paquete.title} className="card-img-top "  />
+        
         <div className="card-body">
+        <div className='ValoracionUsuarios d-flex mb-5'> <p className='fw-bold'>4.7</p></div>
           <div className="Package-info">
           </div>
           <h2 className="card-title">{paquete.nombre}</h2>
@@ -49,7 +51,7 @@ function OfferCard({ paquete, cardsToShow, VITE_PATH_IMAGES, handleBuy}) {
             <div className="bg-secondary-subtle w-100 rounded fw-bold p-2 mt-1" style={{color :"black"}}> Para {paquete.total_personas} Personas</div>
             </div>
           <div className="Information d-flex flex-column align-items-end">
-            <h3 className='fw-bold'>{`$${agregarPuntos(paquete.precio_vuelo * paquete.total_personas + paquete.precio_noche * diferenciaEnDias)}`}</h3>
+            <h3 className='fw-bold'>{`CLP$${agregarPuntos(paquete.precio_vuelo * paquete.total_personas + paquete.precio_noche * diferenciaEnDias)}`}</h3>
             
           </div></div>
           <div className='d-flex justify-content-end'><button className="btn btn-primary btn-card " onClick={() => handleBuy(paquete)} >Ver Paquete</button></div>

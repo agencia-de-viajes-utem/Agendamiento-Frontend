@@ -9,7 +9,7 @@ import { TbBathFilled } from "react-icons/tb";
 import { GrRestaurant } from "react-icons/gr";
 
 
-//import { FaPeopleGroup } from 'react-icons/fa'; este icono genera error
+// import { FaPeopleGroup } from 'react-icons/fa'; 
 
 
 export const serviceIcons = {
@@ -31,7 +31,7 @@ export const serviceIcons = {
     'Baño de mármol': <TbBathFilled />,
     'Desayuno gourmet': <MdFoodBank />,
     'Restaurante gourmet':<GrRestaurant />,
-    //'Sala de Conferencias': <FaPeopleGroup />,
+    // 'Sala de Conferencias': <FaPeopleGroup />,
      'Servicio de habitaciones':<FaBed/>,
      'Terraza privada':<MdDeck />
 

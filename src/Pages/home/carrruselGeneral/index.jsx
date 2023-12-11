@@ -25,6 +25,7 @@ function OfferCard({ paquete, cardsToShow, VITE_PATH_IMAGES, handleBuy}) {
       <div className="card mb-2 " style={{ height: '100%', width:"350px" }}>
         <img src={imageUrl} alt={paquete.title} className="card-img-top "  />
         <div className="card-body">
+        <div className='ValoracionUsuarios d-flex mb-5'> <p className='fw-bold'>4.7</p></div>
           <div className="Package-info">
           </div>
           <h2 className="card-title">{paquete.nombre}</h2>
