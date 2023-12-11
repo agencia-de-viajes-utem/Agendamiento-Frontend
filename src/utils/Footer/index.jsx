@@ -6,7 +6,7 @@ function Footer(){
     return(
         <footer className="custom-footer">
             <div className="logo-container">
-                <img src="/logo.png" alt="Logo" />
+                <img src="https://storage.googleapis.com/celtic-shape-407219.appspot.com/tisw/assets/logo.svg" alt="Logo" />
             </div>
             <nav className="footer-links">
                 <a href="/">Inicio</a>

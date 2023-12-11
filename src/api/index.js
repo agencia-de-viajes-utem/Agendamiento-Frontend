@@ -6,3 +6,4 @@ export * from './getOfertas';
 export * from './getMasvistos';
 export * from './getDestacados';
 export * from './getComentario'
+export * from './agendar'

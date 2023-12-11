@@ -60,7 +60,7 @@ const tarjetaDescripcion = () => {
         <p className="icono-texto"><span className='fw-bold'>Correo: </span>{`${correo_electronico_hotel}`}</p>
       </div>
       <div className="seccion transicion">
-        <img src="/logo.png" alt="logo" className="logo" />
+        <img src="https://storage.googleapis.com/celtic-shape-407219.appspot.com/tisw/assets/logo.svg" alt="logo" className="logo" />
       </div>
       <div className="seccion">
         <h1>Vuelo <FaPlaneDeparture/></h1>
