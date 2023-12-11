@@ -94,7 +94,7 @@ const PaqueteCard = ({ paquete, handleBuy }) => {
                     </div>
                     <div className="paqueteCardPriceTotal">
                         <div className="aerolinea fs-5">
-                           <div className="row"> <p>Viajando con </p>  </div>
+                           <div className=" ViajandoCon"> <p>Viajando con </p>  </div>
                             <div className="row"> <img style={{width:"200px"}} className='img-fluid' src={aerolinea(aerolineaSeleccionada)} alt={aerolineaSeleccionada} /> </div>
                         </div>
                         <div className="paqueteCardPriceTotalPersona ">

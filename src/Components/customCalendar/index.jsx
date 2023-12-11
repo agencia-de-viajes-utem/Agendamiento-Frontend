@@ -98,8 +98,8 @@ const CustomCalendar = ({ onDateSelect, placeholder = "Selecciona una fecha" }) 
                         maxDetail={view}
                         minDetail={view}
                         selectRange={view === 'month'}
-                        //minDate es para no poder seleccionar fechas anteriores a la actual
-                        //minDate={new Date()}
+                        // minDate es para no poder seleccionar fechas anteriores a la actual
+                        minDate={new Date()}
                     />
                     <button className="CalendarToggleBtn" onClick={handleToggleView}>
                         Ver {view === 'month' ? 'por mes' : 'por día'}
