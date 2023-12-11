@@ -139,6 +139,7 @@ const Home = () => {
         navigate('/detalle', { state: paquete });
     }
 
+
     return (
         <div className="Home">
             <Header />

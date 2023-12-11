@@ -56,7 +56,7 @@ const tarjetaDescripcion = () => {
         <p className='fw-bold'>{nombre_hotel}, {direccion_hotel}</p>
         <p><span className='fw-bold'>Estadia: </span>{` ${diferenciaEnDias} días y ${diferenciaEnDias - 1} noches `}</p>
         <p className="icono-texto"><span className='fw-bold'>Telefono: </span>{`${telefono_hotel}`}</p>
-        <p className="icono-texto"><span className='fw-bold'>Web: </span>{`${sitio_web_hotel}`}</p>
+        <p className="icono-texto"><span className='fw-bold'>Web: </span><a href='https://www.youtube.com/watch?v=JwwizYSyaGM&pp=ygULdGFvIHBhaSBwYWk%3D'>{`${sitio_web_hotel}`}</a></p>
         <p className="icono-texto"><span className='fw-bold'>Correo: </span>{`${correo_electronico_hotel}`}</p>
       </div>
       <div className="seccion transicion">

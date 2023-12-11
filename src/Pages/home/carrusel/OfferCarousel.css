@@ -133,7 +133,7 @@ font-size: 1rem;
 
 }
 
-.ValoracionUsuarios {
+.ValoracionUser {
   position: absolute;
   top: 0;
   right: 0;
@@ -144,8 +144,8 @@ font-size: 1rem;
   height: 50px;
   color: #eaeaea;
 }
-.ValoracionUsuarios p {
-  margin: 0; /* Remove default margin */
+.ValoracionUser p {
+  margin: 0; 
   display: flex;
   justify-content: center;
   align-items: center;

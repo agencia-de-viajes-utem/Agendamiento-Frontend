@@ -33,9 +33,9 @@ function OfferCard({ paquete, cardsToShow, VITE_PATH_IMAGES, handleBuy}) {
     <div className={`col-md-${8 / cardsToShow} col-xl-${9 / cardsToShow}  mt-2 mb-2 me-5 ms-5 `}>
       <div className="card mb-2 " style={{ height: '100%', width:"350px" }}>
         <img src={imageUrl} alt={paquete.title} className="card-img-top "  />
-        
+        {/* <img src='./concepcion-palace-hotel.jpg'/> */}
         <div className="card-body">
-        <div className='ValoracionUsuarios d-flex mb-5'> <p className='fw-bold'>4.7</p></div>
+        <div className='ValoracionUser d-flex mb-5'> <p className='fw-bold'>{paquete.info_paquete.hotel_info.valoracion_hotel}</p></div>
           <div className="Package-info">
           </div>
           <h2 className="card-title">{paquete.nombre}</h2>

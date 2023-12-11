@@ -22,7 +22,7 @@ function NavBar() {
                         </Nav.Link>
                     </Nav>
                     <Nav className="mr-auto">
-                        <Nav.Link className="btn" href="">
+                        <Nav.Link className="btn" href="https://usuario.tisw.cl/">
                                 <i className="bi bi-person-circle"></i> Ingresar
                         </Nav.Link>
                     </Nav>
